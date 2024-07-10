@@ -1,18 +1,25 @@
+
 {
-    "name": "JATE",
+    "name": "jate",
     "version": "1.0.0",
-    "description": "",
+    "description": "Just Another Text Editor with PWA capabilities",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client"
+      "start": "nodemon server.js"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+      "text editor",
+      "PWA",
+      "indexedDB",
+      "service worker"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
     "dependencies": {
-        "express": "^4.17.1"
+      "express": "^4.17.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
     }
-}
+  }
+  
