@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './client/src/index.js',
+  entry: './client/client/build/index.js',
   output: {
     path: path.resolve(__dirname, 'client/build'),
     filename: 'bundle.js',
@@ -51,7 +51,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './client/src/index.html'
+      template: './client/client/build/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.css'
